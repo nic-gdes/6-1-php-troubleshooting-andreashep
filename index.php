@@ -1,7 +1,7 @@
 <h3>Question 1</h3>
 <?php
   // Question 1
-  echo "Hello, World <br />"
+  echo "Hello, World <br />";
   echo "Hello back";
 ?>
 
@@ -11,7 +11,7 @@
 <?php
   // Question 2
   $greeting = "Good morning";
-  echo $Greeting;
+  echo $greeting;
 ?>
 
 <hr />
@@ -21,7 +21,7 @@
   // Question 3
   $firstName = "John";
   $lastName = "Doe";
-  echo "Name: " + $firstName + " " + $lastName;
+  echo "Name: " . $firstName . " " . $lastName;
 ?>
 
 <hr />
@@ -29,7 +29,7 @@
 
 <?php
   // Question 4
-  $colors = array("Red", "Green", "Blue";
+  $colors = array("Red", "Green", "Blue");
   echo $colors[1];
 ?>
 
@@ -41,7 +41,7 @@
   function greet($name) {
     echo "Hello, " . $name;
   }
-  greet();
+  greet($name = "Ted");
 ?>
 
 <hr />
@@ -50,7 +50,7 @@
 <?php
   // Question 6: Be careful, this will not result in a loud error, it's just going to be wrong. Read the code to figure out what it SHOULD do, and make sure it does that.
   $age = 20;
-  if ($age = 18) {
+  if ($age == 18) {
       echo "You are 18 years old.";
   } else {
     echo "You are not 18 years old.";
@@ -63,7 +63,7 @@
 <?php
   // Question 7
   $count = 0;
-  echo 'Count: ' + ++$count;
+  echo 'Count: ' . ++$count;
 ?>
 
 <hr />
@@ -71,8 +71,8 @@
 
 <?php
   // Question 8
-  define("GREETING", "Hello, everyone.");
-  echo GREETINGS;
+  define("greeting", "Hello, everyone.");
+  echo $greeting;
 ?>
 
 <hr />
@@ -92,5 +92,5 @@
 <?php
   // Question 10
   $user = array("name" => "John Doe", "age" => 30);
-  echo $user[name];
+  echo $user["name"];
 ?>
